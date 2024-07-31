@@ -1,4 +1,5 @@
 resource "google_compute_instance" "vm_instance" {
+  count = 0
   name         = var.instance_name
   machine_type = var.machine_type
   zone         = var.zone

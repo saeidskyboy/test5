@@ -1,11 +1,11 @@
 terraform {
   required_version = ">= 1.5.0"
-  # cloud { #within this block our state file will be stored in TF cloud in vm-vpc-module workspace
-  #   organization = "project-2255"
-  #   workspaces {
-  #     name = "vm-vpc-module"
-  #   }
-  # }
+  cloud { #within this block our state file will be stored in TF cloud in vm-vpc-module workspace
+    organization = "project-2255"
+    workspaces {
+      name = "connect-TF-github"
+    }
+  }
 
   required_providers {
     google = {
